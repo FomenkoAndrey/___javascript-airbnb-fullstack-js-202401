@@ -28,24 +28,17 @@
 // second()
 
 // ! with callbacks
-function getUserData(callback) {
-  console.log('Робимо запит на сервер')
-
+function first(callback) {
   setTimeout(function () {
-    var userData = {
-      name: 'John',
-      age: 25,
-      id: 1,
-    }
-    console.log('Отримані дані з сервера')
-    callback(userData)
-  }, 3000)
+    console.log('first request')
+    callback()
+  }, 7000)
 }
 
-function displayUserData(data) {
+function second() {
   setTimeout(function () {
-    console.log('Дані користувача: ', data)
-  }, 2000)
+    console.log('second request')
+  }, 5000)
 }
 
-getUserData(displayUserData)
+first(second)
