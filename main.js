@@ -1,15 +1,9 @@
-/* eslint-disable class-methods-use-this */
-/* eslint-disable max-classes-per-file */
-class Test {
-  static staticTest = 'static test'
+const arr = [ 1, 2, 3 ]
 
-  #privateTest = 'private test'
+arr[3] = 4
+console.log(arr) // [ 1, 2, 3, 4 ]
 
-  constructor() {
-    this.test = 'test'
-  }
-}
+let i = 5
+i = 10
 
-// const test = new Test()
-
-console.log(Test.staticTest)
+console.log(i)
