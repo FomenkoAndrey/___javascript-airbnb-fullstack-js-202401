@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="myDiv" class="nav-item">Деякий текст</div>
+
+  <script>
+    // Отримання елемента
+    const myDiv = document.getElementById("myDiv");
+
+    console.log(myDiv.className);
+
+    myDiv.className = "nav-item active";
+
+    console.log(myDiv.className);
+
+    myDiv.className = "nav-item";
+
+    console.log(myDiv.className);
+
+  </script>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

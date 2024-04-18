@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a id="link" href="https://www.example.com">Посилання</a>
+
+  <script>
+    // Отримання елемента
+    const linkElement = document.getElementById("link");
+    console.log(linkElement)
+    // Отримання значення атрибута 'href'
+    const hrefValue = linkElement.getAttribute("href");
+
+    console.log(hrefValue); // Виведення: https://www.example.com
+  </script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

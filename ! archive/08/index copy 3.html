@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <button id="myButton">Натисни мене</button>
+
+  <script>
+    // Отримання елемента
+    const button = document.getElementById("myButton");
+    console.log(button)
+    // Встановлення нового атрибуту
+    button.setAttribute("name", "submitButton");
+
+    // Зміна атрибуту class
+    button.setAttribute("class", "btn btn-primary");
+  </script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
