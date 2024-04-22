@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Приклад обробника подій</title>
+</head>
+
+<body>
+
+  <button id="myButton">Натисни мене</button>
+
+  <script>
+    // Функція, яка буде виконуватися при кліку
+    function handleClick() {
+      alert('Кликнуто на кнопку!');
+      button.removeEventListener('click', handleClick);
+    }
+
+    function handleClick2() {
+      alert('Ще раз вітаю!');
+    }
+
+    // Знаходимо кнопку за ID
+    let button = document.getElementById('myButton');
+
+    // Додавання обробника події
+    button.addEventListener('click', handleClick);
+    button.addEventListener('click', handleClick2);
+
+    // Приклад зняття обробника, який можна розкоментувати за потреби
+  </script>
+
+</body>
+
+</html>

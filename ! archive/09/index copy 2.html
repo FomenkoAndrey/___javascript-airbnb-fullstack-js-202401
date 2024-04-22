@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Приклад обробника подій</title>
+</head>
+
+<body>
+
+  <input type="button" value="Нажми меня" id="elem">
+
+  <script>
+    elem.onclick = function (event) {
+      console.log(event)
+      // вывести тип события, элемент и координаты клика
+      console.log(event.type, event.target);
+      console.log(event.clientX + ':' + event.clientY);
+    }
+  </script>
+
+
+</body>
+
+</html>

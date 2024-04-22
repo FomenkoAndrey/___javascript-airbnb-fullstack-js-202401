@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Приклад preventDefault</title>
+</head>
+
+<body>
+
+  <a href="https://example.com" id="myLink">Перейти на example.com</a>
+
+  <script>
+    // Визначення функції обробника події
+    const handleClick = function (event) {
+      // Запобігання стандартній поведінці посилання
+      event.preventDefault();
+      console.log('Посилання натиснуто, але переходу не відбулося!');
+    };
+
+    // Отримання доступу до посилання та призначення обробника події
+    const link = document.getElementById('myLink');
+    link.addEventListener('click', handleClick);
+  </script>
+
+</body>
+
+</html>
