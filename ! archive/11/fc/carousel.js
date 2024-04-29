@@ -99,12 +99,14 @@ Carousel.prototype = {
   },
 
   pauseHandler() {
+    if (!this.isPlaying) return
     this.isPlaying = false
     clearInterval(this.timerId)
     this.pauseBtn.innerHTML = this.FA_PLAY
   },
 
   playHandler() {
+    if (this.isPlaying) return
     this.isPlaying = true
     this.pauseBtn.innerHTML = this.FA_PAUSE
     this._tick()
