@@ -37,17 +37,19 @@
     gotoNth(currentSlide - 1)
   }
 
+  function tick() {
+    timerId = setInterval(gotoNext, INTERVAL)
+  }
+
   function pauseHandler() {
+    if (!this.isPlaying) return
     isPlaying = false
     clearInterval(timerId)
     pauseBtn.innerHTML = FA_PLAY
   }
 
-  function tick() {
-    timerId = setInterval(gotoNext, INTERVAL)
-  }
-
   function playHandler() {
+    if (this.isPlaying) return
     isPlaying = true
     pauseBtn.innerHTML = FA_PAUSE
     tick()
