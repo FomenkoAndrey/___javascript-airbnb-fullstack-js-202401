@@ -30,8 +30,9 @@ body {
 .search {
   margin-bottom: 30px;
 }
+.search__group {
+}
 .search__group--input {
-  margin-bottom: 7px;
 }
 .search__label-input {
   display: block;
@@ -45,13 +46,4 @@ body {
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid lightsteelblue;
-}
-.search__label-checbox {
-  font-size: 0.8rem;
-  user-select: none;
-}
-.search__group--checkbox {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
