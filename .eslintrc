@@ -36,6 +36,7 @@
     "import/extensions": "off",
     "no-underscore-dangle": "off",
     "no-unused-expressions": "off",
-    "no-restricted-syntax": ["off"]
+    "no-restricted-syntax": ["off"],
+    "import/prefer-default-export": "off"
   }
 }
